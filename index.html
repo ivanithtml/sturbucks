@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/starbucks-coffee.svg" type="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="/starbucks-coffee.svg" width="100px"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>StarBucks</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nam delectus quaerat repudiandae.<br> Accusantium voluptatum facere soluta optio porro nulla delectus quia iste dignissimos qui vel, deleniti magni expedita eaque.
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, similique? Magnam maiores voluptate debitis enim est provident sit quis. Dolorum aliquam minima esse culpa ratione commodi repellat nulla aut at!</p>
+                <a href="https://athome.starbucks.com/">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png')"></li>
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;    
+        }
+    </script>
+</body>
+</html>
